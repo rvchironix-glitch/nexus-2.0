@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "nexuslink",
+  "version": "${version}",
+  "name": "NexusLink",
+  "description": "An Essential-inspired multiplayer, social, and hosting mod for Minecraft Java Edition.",
+  "authors": [
+    "NexusLink Development Team"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/nexuslink",
+    "sources": "https://github.com/nexuslink/nexuslink"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nexuslink.NexusLinkMod"
+    ],
+    "client": [
+      "com.nexuslink.client.NexusLinkClient"
+    ]
+  },
+  "mixins": [
+    "nexuslink.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
